@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'flutter/widgets/Cupertino/cupertinoAction_sheet_action_widget.dart';
+import 'flutter/widgets/responsive/media_query.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CupertinoApp(
       title: 'Flutter Learning',
-      home: CupertinoActionSheetActionWidgets(),
+      home: MediaQuerySystem(),
     );
   }
 }
