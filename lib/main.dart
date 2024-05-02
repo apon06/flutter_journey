@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
-import 'flutter/widgets/responsive/media_query.dart';
+import 'package:flutter/material.dart';
+import 'flutter/widgets/inherited/inherited_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +10,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
-      title: 'Flutter Learning',
-      home: MediaQuerySystem(),
+    return const MyInheritedWidgets(
+      age: 17,
+      child: MaterialApp(
+        title: 'Flutter Learning',
+        home: DataShowScreen(),
+      ),
     );
   }
 }
-
