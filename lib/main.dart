@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'flutter/widgets/inherited/inherited_widgets.dart';
-import 'flutter/widgets/working_assets/fonts.dart';
+import 'flutter/Learn the Basics of Dart/widgets/inherited/inherited_widgets.dart';
+import 'flutter/Learn the Basics of Dart/widgets/working_assets/fonts.dart';
 
 void main() {
   runApp(const MyApp());
