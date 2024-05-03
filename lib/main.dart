@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_journey/flutter/widgets/working_assets/image.dart';
 import 'flutter/widgets/inherited/inherited_widgets.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       age: 17,
       child: MaterialApp(
         title: 'Flutter Learning',
-        home: DataShowScreen(),
+        home: ImageWidgets(),
       ),
     );
   }
