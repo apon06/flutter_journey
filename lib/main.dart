@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_journey/flutter/widgets/working_assets/image.dart';
 import 'flutter/widgets/inherited/inherited_widgets.dart';
+import 'flutter/widgets/working_assets/fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       age: 17,
       child: MaterialApp(
         title: 'Flutter Learning',
-        home: ImageWidgets(),
+        home: FontsSystem(),
       ),
     );
   }
