@@ -5,7 +5,7 @@ class TextWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           children: [
@@ -32,7 +32,7 @@ class TextWidgets extends StatelessWidget {
               ),
             ),
             const SelectableText('SelectableText'),
-            Text('Hi '*300),
+            Text('Hi ' * 300),
           ],
         ),
       ),
