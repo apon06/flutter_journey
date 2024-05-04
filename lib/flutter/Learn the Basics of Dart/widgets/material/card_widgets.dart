@@ -5,12 +5,12 @@ class CardWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Container(
+        child: SizedBox(
           height: 100, 
           width: 100,
-          child: const Card(
+          child: Card(
             elevation: 10,
             // shape:  StarBorder(),
             shadowColor: Colors.blue,

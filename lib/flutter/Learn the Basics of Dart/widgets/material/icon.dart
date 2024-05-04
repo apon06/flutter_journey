@@ -5,8 +5,14 @@ class IconWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Icon(Icons.add, size: 50, color: Colors.red)),
+    return const Scaffold(
+      body: Center(
+        child: Icon(
+          Icons.add,
+          size: 50,
+          color: Colors.red,
+        ),
+      ),
     );
   }
 }
