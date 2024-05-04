@@ -12,7 +12,6 @@ void main() {
     print('No');
   }
   print(baseColors.index); // 2
-  
 
   Weekday today = Weekday.Friday;
 
@@ -21,4 +20,8 @@ void main() {
 
   /// make arrey ebery value.Output : [W, e, e, k, d, a, y, ., F, r, i, d, a, y]
   print(today.toString().split(''));
+
+  for (Weekday element in Weekday.values) {
+    print(element);
+  }
 }
