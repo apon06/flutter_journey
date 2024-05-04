@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'flutter/Learn the Basics of Dart/widgets/inherited/inherited_widgets.dart';
-import 'flutter/Learn the Basics of Dart/widgets/working_assets/fonts.dart';
+import 'flutter/Learn the Basics of Dart/widgets/material/alert_dialog.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       age: 17,
       child: MaterialApp(
         title: 'Flutter Learning',
-        home: FontsSystem(),
+        home: AlartWidgets(),
       ),
     );
   }
