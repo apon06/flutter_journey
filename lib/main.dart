@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'flutter/Learn the Basics of Dart/widgets/inherited/inherited_widgets.dart';
-import 'flutter/Learn the Basics of Dart/widgets/material/alert_dialog.dart';
+import 'flutter/Learn the Basics of Dart/widgets/material/hero.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       age: 17,
       child: MaterialApp(
         title: 'Flutter Learning',
-        home: AlartWidgets(),
+        home: HeroWidgets(),
       ),
     );
   }
