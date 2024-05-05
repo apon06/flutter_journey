@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class YoutubePlayerFlutter extends StatefulWidget {
+class YoutubePlayerFlutter extends StatelessWidget {
   const YoutubePlayerFlutter({super.key});
 
-  @override
-  State<YoutubePlayerFlutter> createState() => _YoutubePlayerFlutterState();
-}
-
-class _YoutubePlayerFlutterState extends State<YoutubePlayerFlutter> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
