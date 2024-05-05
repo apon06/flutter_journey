@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/3_working_assets/4_Design_Principles/5_Package Manager/package/youtube_player/youtube_player_flutter.dart';
 import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/inherited/inherited_widgets.dart';
-import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/material/hero.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       age: 17,
       child: MaterialApp(
         title: 'Flutter Learning',
-        home: HeroWidgets(),
+        home: YoutubePlayerFlutter(),
       ),
     );
   }
