@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'flutter/Learn the Basics of Dart/widgets/inherited/inherited_widgets.dart';
-import 'flutter/Learn the Basics of Dart/widgets/material/hero.dart';
+import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/inherited/inherited_widgets.dart';
+import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/material/hero.dart';
 
 void main() {
   runApp(const MyApp());
