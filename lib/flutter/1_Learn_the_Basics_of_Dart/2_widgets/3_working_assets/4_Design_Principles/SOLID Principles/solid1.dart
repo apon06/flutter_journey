@@ -1,3 +1,4 @@
+///! Single Responsibility Principle
 /// It's one class and two properties so it's better not to read
 /// So User The Other Way
 class UserManager {
