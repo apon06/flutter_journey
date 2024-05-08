@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MyInheritedWidgets(
-      age: 17,
+      age: 18,
       child: MaterialApp(
         title: 'Flutter Learning',
         home: JsonDataShow(),
