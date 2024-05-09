@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_journey/flutter/1_Learn_the_Basics_of_Dart/2_widgets/3_working_assets/4_Design_Principles/5_Package_Manager/6_Working_with_APIs/json/json_data_show.dart';
+import 'package:flutter_journey/flutter/1_Learn_the_Basics_of_Dart/2_widgets/material/flutterlogo.dart';
 import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/inherited/inherited_widgets.dart';
 
 void main() {
@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MyInheritedWidgets(
-      age: 17,
+      age: 18,
       child: MaterialApp(
         title: 'Flutter Learning',
-        home: JsonDataShow(),
+        home: FlutterLogoWidgets(),
       ),
     );
   }
