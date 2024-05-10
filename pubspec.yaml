@@ -39,6 +39,7 @@ dependencies:
   klutter_youtube_player_iframe_plus: ^0.0.2
   web_socket_channel: ^2.4.0
   shared_preferences:
+  http: ^1.2.0
 
 dev_dependencies:
   flutter_test:
