@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   youtube_player_flutter: ^8.1.2
   klutter_youtube_player_iframe_plus: ^0.0.2
+  web_socket_channel: ^2.4.0
 
 dev_dependencies:
   flutter_test:
