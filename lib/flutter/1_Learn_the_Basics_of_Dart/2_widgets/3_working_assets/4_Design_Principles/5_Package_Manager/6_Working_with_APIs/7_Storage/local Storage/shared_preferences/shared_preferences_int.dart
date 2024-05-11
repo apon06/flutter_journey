@@ -8,7 +8,6 @@ class SharedPreferencesLocalStoreInt extends StatefulWidget {
   State<SharedPreferencesLocalStoreInt> createState() =>
       SsharedPreferencesStateLocalStore();
 }
-
 class SsharedPreferencesStateLocalStore
     extends State<SharedPreferencesLocalStoreInt> {
   int count = 0;
@@ -22,7 +21,6 @@ class SsharedPreferencesStateLocalStore
       } 
     });
   }
-
   add() async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     setState(() {
