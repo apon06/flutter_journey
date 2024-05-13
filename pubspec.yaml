@@ -41,7 +41,7 @@ dependencies:
   shared_preferences:
   http: ^1.2.0
   video_player: ^2.8.5
-  appinio_video_player: ^1.2.0
+  chewie: ^1.5.0
   # flick_video_player: ^0.5.0
 
 dev_dependencies:

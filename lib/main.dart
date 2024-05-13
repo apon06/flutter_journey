@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_journey/flutter/1_Learn_the_Basics_of_Dart/2_widgets/Stack.dart';
+import 'package:flutter_journey/flutter/1_Learn_the_Basics_of_Dart/2_widgets/3_working_assets/4_Design_Principles/5_Package_Manager/package/video_player/chewie_player.dart';
 import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/inherited/inherited_widgets.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       age: 18,
       child: MaterialApp(
         title: 'Flutter Learning',
-        home: StackWidgets(),
+        home: VideoPlay(),
       ),
     );
   }
