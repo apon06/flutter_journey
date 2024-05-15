@@ -1,8 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_journey/firebase_options.dart';
-import 'package:flutter_journey/flutter/1_Learn_the_Basics_of_Dart/2_widgets/3_working_assets/4_Design_Principles/5_Package_Manager/6_Working_with_APIs/7_Storage/firebase/quiz_app/admin/admin_login.dart';
-import 'flutter/1_Learn_the_Basics_of_Dart/2_widgets/inherited/inherited_widgets.dart';
+import 'package:flutter_journey/flutter/1_Learn_the_Basics_of_Dart/2_widgets/3_working_assets/4_Design_Principles/5_Package_Manager/6_Working_with_APIs/7_Storage/firebase/quiz_app/pages/home.dart';
+import 'package:flex_color_scheme/flex_color_scheme.dart';
+import 'dart:async';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,12 +18,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MyInheritedWidgets(
-      age: 18,
-      child: MaterialApp(
-        title: 'Flutter Learning',
-        home: AdminLogin(),
-      ),
+    return MaterialApp(
+      theme:
+          FlexThemeData.light(scheme: FlexScheme.mandyRed, useMaterial3: true),
+      darkTheme: FlexThemeData.dark(scheme: FlexScheme.red, useMaterial3: true),
+      themeMode: ThemeMode.system,
+      title: 'Flutter Learning',
+      home: const Home(),
+      // home: const Question(categoryName: 'Animal'),
     );
   }
 }
