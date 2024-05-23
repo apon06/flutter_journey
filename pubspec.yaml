@@ -45,6 +45,7 @@ flutter:
   assets:
     - E:/Extansion/github/flutter_journey/assets/image/
     - assets/json/
+    - assets/gifs/200.webp
   #   - images/a_dot_ham.jpeg
 
   fonts:
