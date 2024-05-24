@@ -1,3 +1,5 @@
+import 'dart:isolate';
+
 import 'package:flutter/material.dart';
 
 class FlutterIsolates extends StatefulWidget {
@@ -13,17 +15,22 @@ class FlutterIsolatesState extends State<FlutterIsolates> {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset('assets/gifs/200.webp'),
-            const SizedBox(height: 10),
-            ElevatedButton(onPressed: () {
-              var total = totalEX();
-              debugPrint('Result $total');
-            }, child: const Text('From 1')),
-            const SizedBox(height: 10),
-            ElevatedButton(onPressed: () {}, child: const Text('From 2')),
-            const SizedBox(height: 10),
-            ElevatedButton(onPressed: () {}, child: const Text('From 3')),
+            const CircularProgressIndicator(),
+            ElevatedButton(
+              onPressed: () {
+                heavyLoad(1000000000);
+              },
+              child: const Text('Click 1'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                isolatesFun();
+              },
+              child: const Text('Click 2'),
+            ),
           ],
         ),
       ),
@@ -31,11 +38,27 @@ class FlutterIsolatesState extends State<FlutterIsolates> {
   }
 }
 
-totalEX() {
-  var total = 0;
-  for (int i = 0; i <= 1000900000000; i++) {
-    total += total;
-    debugPrint('Result $total');
+int heavyLoad(int iteration) {
+  int value = 1;
+  for (var i = 0; i <= iteration; i++) value++;
+  print(value);
+  return value;
+}
+
+isolatesFun() async {
+  final ReceivePort receivePort = ReceivePort();
+  try {
+    await Isolate.spawn(runTask, [receivePort.sendPort, 1000000000]);
+  } catch (e) {
+    receivePort.close();
   }
-  return total;
+  final res = receivePort.first;
+  print('value $res');
+}
+
+runTask(List<dynamic> args) {
+  SendPort resultport = args[0];
+  int value = 1;
+  for (var i = 0; i <= args[1]; i++) value++;
+  Isolate.exit(resultport, value);
 }
