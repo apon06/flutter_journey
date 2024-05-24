@@ -10,28 +10,28 @@ class SharedPreferencesLocalStoreInt extends StatefulWidget {
 }
 class SsharedPreferencesStateLocalStore
     extends State<SharedPreferencesLocalStoreInt> {
-  int count = 0;
+    int count = 0;
 
   savaData() async {
-    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance(); // Important
     int? saveValue = sharedPreferences.getInt('Int');
     setState(() {
-      if (saveValue != null) {
+      if (saveValue != null) { // if != null send count data in saveValue
         count = saveValue;
       } 
     });
   }
   add() async {
-    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance(); // Important
     setState(() {
       count++;
-      sharedPreferences.setInt('Int', count);
+      sharedPreferences.setInt('Int', count); /// setInt Store data 'Int' key,count send data 'Int' ket
     });
   }
 
   @override
   void initState() {
-    savaData();
+    savaData(); // Important Other wise Data not save
     super.initState();
   }
 
