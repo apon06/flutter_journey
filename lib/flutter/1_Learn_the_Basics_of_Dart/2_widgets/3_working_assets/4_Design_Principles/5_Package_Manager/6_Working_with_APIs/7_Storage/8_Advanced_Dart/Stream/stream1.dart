@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-class StreamFlutter extends StatelessWidget {
-  const StreamFlutter({super.key});
+class StreamFlutter1 extends StatelessWidget {
+  const StreamFlutter1({super.key});
 
   @override
   Widget build(BuildContext context) {
